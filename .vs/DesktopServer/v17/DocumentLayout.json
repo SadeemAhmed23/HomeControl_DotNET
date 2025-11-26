@@ -1,0 +1,77 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "D:\\Projects\\VisualStudio\\ServerDEV\\Server_2\\DesktopServer\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{E883D0E2-FF0B-4722-AFBA-851F605832A2}|DesktopServer\\DesktopServer.csproj|d:\\projects\\visualstudio\\serverdev\\server_2\\desktopserver\\desktopserver\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{E883D0E2-FF0B-4722-AFBA-851F605832A2}|DesktopServer\\DesktopServer.csproj|solutionrelative:desktopserver\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E883D0E2-FF0B-4722-AFBA-851F605832A2}|DesktopServer\\DesktopServer.csproj|d:\\projects\\visualstudio\\serverdev\\server_2\\desktopserver\\desktopserver\\form1.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E883D0E2-FF0B-4722-AFBA-851F605832A2}|DesktopServer\\DesktopServer.csproj|solutionrelative:desktopserver\\form1.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E883D0E2-FF0B-4722-AFBA-851F605832A2}|DesktopServer\\DesktopServer.csproj|d:\\projects\\visualstudio\\serverdev\\server_2\\desktopserver\\desktopserver\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E883D0E2-FF0B-4722-AFBA-851F605832A2}|DesktopServer\\DesktopServer.csproj|solutionrelative:desktopserver\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 2,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{3ae79031-e1bc-11d0-8f78-00a0c9110057}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{eefa5220-e298-11d0-8f78-00a0c9110057}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Form1.cs [Design]",
+              "DocumentMoniker": "D:\\Projects\\VisualStudio\\ServerDEV\\Server_2\\DesktopServer\\DesktopServer\\Form1.cs",
+              "RelativeDocumentMoniker": "DesktopServer\\Form1.cs",
+              "ToolTip": "D:\\Projects\\VisualStudio\\ServerDEV\\Server_2\\DesktopServer\\DesktopServer\\Form1.cs [Design]",
+              "RelativeToolTip": "DesktopServer\\Form1.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-11T12:22:50.325Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Form1.Designer.cs",
+              "DocumentMoniker": "D:\\Projects\\VisualStudio\\ServerDEV\\Server_2\\DesktopServer\\DesktopServer\\Form1.Designer.cs",
+              "RelativeDocumentMoniker": "DesktopServer\\Form1.Designer.cs",
+              "ToolTip": "D:\\Projects\\VisualStudio\\ServerDEV\\Server_2\\DesktopServer\\DesktopServer\\Form1.Designer.cs",
+              "RelativeToolTip": "DesktopServer\\Form1.Designer.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABYAAAAIAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-01T20:57:23.452Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Form1.cs",
+              "DocumentMoniker": "D:\\Projects\\VisualStudio\\ServerDEV\\Server_2\\DesktopServer\\DesktopServer\\Form1.cs",
+              "RelativeDocumentMoniker": "DesktopServer\\Form1.cs",
+              "ToolTip": "D:\\Projects\\VisualStudio\\ServerDEV\\Server_2\\DesktopServer\\DesktopServer\\Form1.cs",
+              "RelativeToolTip": "DesktopServer\\Form1.cs",
+              "ViewState": "AgIAABEAAAAAAAAAAAAQwBMAAAAgAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-31T05:20:27.239Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,41 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v8.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v8.0": {
+      "DesktopServer/1.0.0": {
+        "dependencies": {
+          "SuperSimpleTcp": "3.0.17"
+        },
+        "runtime": {
+          "DesktopServer.dll": {}
+        }
+      },
+      "SuperSimpleTcp/3.0.17": {
+        "runtime": {
+          "lib/net8.0/SuperSimpleTcp.dll": {
+            "assemblyVersion": "3.0.17.0",
+            "fileVersion": "3.0.17.0"
+          }
+        }
+      }
+    }
+  },
+  "libraries": {
+    "DesktopServer/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "SuperSimpleTcp/3.0.17": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-gW2laxk0w7ypxVsMmLwGwfzaVWPgqDMe5OpVdatWcqLLagJ4noDwBYF7JsQ6A0mwMGOT6YRGO/lUADqJKgQJrg==",
+      "path": "supersimpletcp/3.0.17",
+      "hashPath": "supersimpletcp.3.0.17.nupkg.sha512"
+    }
+  }
+}
