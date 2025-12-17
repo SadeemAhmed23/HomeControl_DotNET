@@ -47,40 +47,32 @@
             panel4 = new Panel();
             txtBox_Water = new TextBox();
             label40 = new Label();
-            label39 = new Label();
             txtLogs_Water = new ListBox();
-            panel10 = new Panel();
-            txtBoxGyser = new TextBox();
-            label36 = new Label();
-            label29 = new Label();
-            label32 = new Label();
-            BtnSetTimer_Gyser = new Button();
-            label35 = new Label();
-            timerMin_Gyser = new NumericUpDown();
-            txtTimer_Gyser = new Label();
-            timerHour_Gyser = new NumericUpDown();
-            label37 = new Label();
-            label38 = new Label();
-            txtUptime_Gyser = new Label();
-            txtPower_Gyser = new Label();
-            BtnON_Gyser = new Button();
-            BtnOFF_Gyser = new Button();
             panel9 = new Panel();
-            txtBoxEGyser = new TextBox();
-            label34 = new Label();
+            label43 = new Label();
+            label39 = new Label();
+            txtPower_EGyser = new Label();
+            label42 = new Label();
+            BtnSetOnTime_EGyser = new Button();
+            OnTimeMin_EGyser = new NumericUpDown();
+            OnTimeHour_EGyser = new NumericUpDown();
             label26 = new Label();
             label27 = new Label();
-            BtnSetTimer_EGyser = new Button();
+            BtnSetOffTime_EGyser = new Button();
+            OffTimeMin_EGyser = new NumericUpDown();
+            OffTimeHour_EGyser = new NumericUpDown();
             label28 = new Label();
-            timerMin_EGyser = new NumericUpDown();
-            txtTimer_EGyser = new Label();
-            timerHour_EGyser = new NumericUpDown();
+            txtOffTime_EGyser = new Label();
+            label24 = new Label();
+            txtOnTime_EGyser = new Label();
             label30 = new Label();
-            label31 = new Label();
             txtUptime_EGyser = new Label();
-            txtPower_EGyser = new Label();
             BtnON_EGyser = new Button();
             BtnOFF_EGyser = new Button();
+            panel11 = new Panel();
+            txtBoxEGyser = new TextBox();
+            label34 = new Label();
+            panel12 = new Panel();
             panel8 = new Panel();
             txtBoxPump = new TextBox();
             label33 = new Label();
@@ -97,6 +89,23 @@
             txtPower_Pump = new Label();
             BtnON_Pump = new Button();
             BtnOFF_Pump = new Button();
+            panel13 = new Panel();
+            panel10 = new Panel();
+            txtBoxGyser = new TextBox();
+            label36 = new Label();
+            label29 = new Label();
+            label32 = new Label();
+            BtnSetTimer_Gyser = new Button();
+            label35 = new Label();
+            timerMin_Gyser = new NumericUpDown();
+            txtTimer_Gyser = new Label();
+            timerHour_Gyser = new NumericUpDown();
+            label37 = new Label();
+            label38 = new Label();
+            txtUptime_Gyser = new Label();
+            txtPower_Gyser = new Label();
+            BtnON_Gyser = new Button();
+            BtnOFF_Gyser = new Button();
             panel2 = new Panel();
             panel7 = new Panel();
             label10 = new Label();
@@ -132,7 +141,6 @@
             btnOFF_ACA = new Button();
             timerHour_ACA = new NumericUpDown();
             txtBoxACA = new TextBox();
-            label24 = new Label();
             txtLogs_AC = new ListBox();
             label5 = new Label();
             txtBox_AC = new TextBox();
@@ -148,15 +156,19 @@
             tabControl1.SuspendLayout();
             tabPage2.SuspendLayout();
             panel4.SuspendLayout();
-            panel10.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)timerMin_Gyser).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)timerHour_Gyser).BeginInit();
             panel9.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)timerMin_EGyser).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)timerHour_EGyser).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)OnTimeMin_EGyser).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)OnTimeHour_EGyser).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)OffTimeMin_EGyser).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)OffTimeHour_EGyser).BeginInit();
+            panel12.SuspendLayout();
             panel8.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)timerMin_Pump).BeginInit();
             ((System.ComponentModel.ISupportInitialize)timerHour_Pump).BeginInit();
+            panel13.SuspendLayout();
+            panel10.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)timerMin_Gyser).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)timerHour_Gyser).BeginInit();
             panel2.SuspendLayout();
             panel7.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)timerMin_ACB).BeginInit();
@@ -328,7 +340,7 @@
             panel5.Dock = DockStyle.Fill;
             panel5.Location = new Point(346, 0);
             panel5.Name = "panel5";
-            panel5.Size = new Size(1336, 791);
+            panel5.Size = new Size(1373, 791);
             panel5.TabIndex = 26;
             // 
             // tabControl1
@@ -339,7 +351,7 @@
             tabControl1.Location = new Point(0, 0);
             tabControl1.Name = "tabControl1";
             tabControl1.SelectedIndex = 0;
-            tabControl1.Size = new Size(1336, 791);
+            tabControl1.Size = new Size(1373, 791);
             tabControl1.TabIndex = 25;
             // 
             // tabPage2
@@ -350,7 +362,7 @@
             tabPage2.Location = new Point(4, 24);
             tabPage2.Name = "tabPage2";
             tabPage2.Padding = new Padding(3);
-            tabPage2.Size = new Size(1328, 763);
+            tabPage2.Size = new Size(1365, 763);
             tabPage2.TabIndex = 1;
             tabPage2.Text = "Control Panel";
             // 
@@ -359,14 +371,14 @@
             panel4.BackColor = Color.FromArgb(64, 64, 64);
             panel4.Controls.Add(txtBox_Water);
             panel4.Controls.Add(label40);
-            panel4.Controls.Add(label39);
             panel4.Controls.Add(txtLogs_Water);
-            panel4.Controls.Add(panel10);
             panel4.Controls.Add(panel9);
-            panel4.Controls.Add(panel8);
+            panel4.Controls.Add(panel11);
+            panel4.Controls.Add(panel12);
+            panel4.Controls.Add(panel13);
             panel4.Location = new Point(551, 27);
             panel4.Name = "panel4";
-            panel4.Size = new Size(771, 734);
+            panel4.Size = new Size(811, 734);
             panel4.TabIndex = 25;
             // 
             // txtBox_Water
@@ -375,7 +387,7 @@
             txtBox_Water.Location = new Point(31, 15);
             txtBox_Water.Name = "txtBox_Water";
             txtBox_Water.ReadOnly = true;
-            txtBox_Water.Size = new Size(700, 23);
+            txtBox_Water.Size = new Size(26, 23);
             txtBox_Water.TabIndex = 21;
             // 
             // label40
@@ -384,24 +396,12 @@
             label40.BackColor = Color.FromArgb(64, 64, 64);
             label40.Font = new Font("Segoe UI", 18F, FontStyle.Bold);
             label40.ForeColor = SystemColors.ControlLightLight;
-            label40.Location = new Point(272, 44);
+            label40.Location = new Point(231, 9);
             label40.Name = "label40";
             label40.Size = new Size(205, 32);
             label40.TabIndex = 21;
             label40.Text = "Water Controller";
             label40.TextAlign = ContentAlignment.MiddleCenter;
-            // 
-            // label39
-            // 
-            label39.AutoSize = true;
-            label39.BackColor = Color.FromArgb(64, 64, 64);
-            label39.Font = new Font("Segoe UI", 12F);
-            label39.ForeColor = SystemColors.ControlLightLight;
-            label39.Location = new Point(295, 541);
-            label39.Name = "label39";
-            label39.Size = new Size(165, 21);
-            label39.TabIndex = 21;
-            label39.Text = "Water Controller Logs:";
             // 
             // txtLogs_Water
             // 
@@ -410,369 +410,62 @@
             txtLogs_Water.ForeColor = SystemColors.Info;
             txtLogs_Water.FormattingEnabled = true;
             txtLogs_Water.ItemHeight = 25;
-            txtLogs_Water.Location = new Point(193, 565);
+            txtLogs_Water.Location = new Point(515, 3);
             txtLogs_Water.Name = "txtLogs_Water";
-            txtLogs_Water.Size = new Size(393, 154);
+            txtLogs_Water.Size = new Size(271, 54);
             txtLogs_Water.TabIndex = 21;
-            // 
-            // panel10
-            // 
-            panel10.BackColor = SystemColors.ActiveCaptionText;
-            panel10.Controls.Add(txtBoxGyser);
-            panel10.Controls.Add(label36);
-            panel10.Controls.Add(label29);
-            panel10.Controls.Add(label32);
-            panel10.Controls.Add(BtnSetTimer_Gyser);
-            panel10.Controls.Add(label35);
-            panel10.Controls.Add(timerMin_Gyser);
-            panel10.Controls.Add(txtTimer_Gyser);
-            panel10.Controls.Add(timerHour_Gyser);
-            panel10.Controls.Add(label37);
-            panel10.Controls.Add(label38);
-            panel10.Controls.Add(txtUptime_Gyser);
-            panel10.Controls.Add(txtPower_Gyser);
-            panel10.Controls.Add(BtnON_Gyser);
-            panel10.Controls.Add(BtnOFF_Gyser);
-            panel10.Location = new Point(511, 88);
-            panel10.Name = "panel10";
-            panel10.Size = new Size(246, 450);
-            panel10.TabIndex = 26;
-            // 
-            // txtBoxGyser
-            // 
-            txtBoxGyser.BackColor = Color.Red;
-            txtBoxGyser.Location = new Point(11, 9);
-            txtBoxGyser.Name = "txtBoxGyser";
-            txtBoxGyser.ReadOnly = true;
-            txtBoxGyser.Size = new Size(26, 23);
-            txtBoxGyser.TabIndex = 25;
-            // 
-            // label36
-            // 
-            label36.AutoSize = true;
-            label36.Font = new Font("Segoe UI", 20F, FontStyle.Bold);
-            label36.ForeColor = SystemColors.ControlLightLight;
-            label36.Location = new Point(81, 3);
-            label36.Name = "label36";
-            label36.Size = new Size(89, 37);
-            label36.TabIndex = 24;
-            label36.Text = "Gyser";
-            // 
-            // label29
-            // 
-            label29.AutoSize = true;
-            label29.ForeColor = SystemColors.ControlLightLight;
-            label29.Location = new Point(149, 342);
-            label29.Name = "label29";
-            label29.Size = new Size(18, 15);
-            label29.TabIndex = 26;
-            label29.Text = "m";
-            // 
-            // label32
-            // 
-            label32.AutoSize = true;
-            label32.ForeColor = SystemColors.ControlLightLight;
-            label32.Location = new Point(60, 342);
-            label32.Name = "label32";
-            label32.Size = new Size(14, 15);
-            label32.TabIndex = 25;
-            label32.Text = "h";
-            // 
-            // BtnSetTimer_Gyser
-            // 
-            BtnSetTimer_Gyser.BackColor = SystemColors.ButtonFace;
-            BtnSetTimer_Gyser.Font = new Font("Segoe UI", 14F);
-            BtnSetTimer_Gyser.Location = new Point(43, 398);
-            BtnSetTimer_Gyser.Name = "BtnSetTimer_Gyser";
-            BtnSetTimer_Gyser.Size = new Size(146, 34);
-            BtnSetTimer_Gyser.TabIndex = 20;
-            BtnSetTimer_Gyser.Text = "Set Timer";
-            BtnSetTimer_Gyser.UseVisualStyleBackColor = false;
-            BtnSetTimer_Gyser.Click += BtnSetTimer_Gyser_Click;
-            // 
-            // label35
-            // 
-            label35.AutoSize = true;
-            label35.BackColor = SystemColors.ActiveCaptionText;
-            label35.Font = new Font("Microsoft Sans Serif", 12F);
-            label35.ForeColor = SystemColors.ButtonHighlight;
-            label35.Location = new Point(11, 155);
-            label35.Name = "label35";
-            label35.Size = new Size(57, 20);
-            label35.TabIndex = 17;
-            label35.Text = "Power:";
-            // 
-            // timerMin_Gyser
-            // 
-            timerMin_Gyser.AutoSize = true;
-            timerMin_Gyser.BackColor = SystemColors.ButtonFace;
-            timerMin_Gyser.Location = new Point(134, 362);
-            timerMin_Gyser.Name = "timerMin_Gyser";
-            timerMin_Gyser.Size = new Size(54, 23);
-            timerMin_Gyser.TabIndex = 18;
-            // 
-            // txtTimer_Gyser
-            // 
-            txtTimer_Gyser.AutoSize = true;
-            txtTimer_Gyser.BackColor = SystemColors.ActiveCaptionText;
-            txtTimer_Gyser.Font = new Font("Courier New", 26F, FontStyle.Bold);
-            txtTimer_Gyser.ForeColor = Color.DeepSkyBlue;
-            txtTimer_Gyser.Location = new Point(98, 262);
-            txtTimer_Gyser.Name = "txtTimer_Gyser";
-            txtTimer_Gyser.Size = new Size(122, 40);
-            txtTimer_Gyser.TabIndex = 18;
-            txtTimer_Gyser.Text = "0:0:0";
-            txtTimer_Gyser.TextAlign = ContentAlignment.MiddleCenter;
-            // 
-            // timerHour_Gyser
-            // 
-            timerHour_Gyser.AutoSize = true;
-            timerHour_Gyser.BackColor = SystemColors.ButtonFace;
-            timerHour_Gyser.InterceptArrowKeys = false;
-            timerHour_Gyser.Location = new Point(43, 362);
-            timerHour_Gyser.Name = "timerHour_Gyser";
-            timerHour_Gyser.Size = new Size(54, 23);
-            timerHour_Gyser.TabIndex = 19;
-            // 
-            // label37
-            // 
-            label37.AutoSize = true;
-            label37.BackColor = SystemColors.ActiveCaptionText;
-            label37.Font = new Font("Microsoft Sans Serif", 12F);
-            label37.ForeColor = SystemColors.ButtonHighlight;
-            label37.Location = new Point(11, 206);
-            label37.Name = "label37";
-            label37.Size = new Size(64, 20);
-            label37.TabIndex = 18;
-            label37.Text = "Uptime:";
-            // 
-            // label38
-            // 
-            label38.AutoSize = true;
-            label38.BackColor = SystemColors.ActiveCaptionText;
-            label38.Font = new Font("Microsoft Sans Serif", 12F);
-            label38.ForeColor = SystemColors.ButtonHighlight;
-            label38.Location = new Point(16, 262);
-            label38.Name = "label38";
-            label38.Size = new Size(52, 20);
-            label38.TabIndex = 17;
-            label38.Text = "Timer:";
-            // 
-            // txtUptime_Gyser
-            // 
-            txtUptime_Gyser.AutoSize = true;
-            txtUptime_Gyser.BackColor = SystemColors.ActiveCaptionText;
-            txtUptime_Gyser.Font = new Font("Courier New", 29F, FontStyle.Bold);
-            txtUptime_Gyser.ForeColor = Color.SpringGreen;
-            txtUptime_Gyser.Location = new Point(95, 206);
-            txtUptime_Gyser.Name = "txtUptime_Gyser";
-            txtUptime_Gyser.Size = new Size(135, 46);
-            txtUptime_Gyser.TabIndex = 19;
-            txtUptime_Gyser.Text = "0:0:0";
-            txtUptime_Gyser.TextAlign = ContentAlignment.MiddleCenter;
-            // 
-            // txtPower_Gyser
-            // 
-            txtPower_Gyser.AutoSize = true;
-            txtPower_Gyser.BackColor = SystemColors.ActiveCaptionText;
-            txtPower_Gyser.Font = new Font("Microsoft Sans Serif", 22F, FontStyle.Bold);
-            txtPower_Gyser.ForeColor = Color.DeepSkyBlue;
-            txtPower_Gyser.Location = new Point(104, 155);
-            txtPower_Gyser.Name = "txtPower_Gyser";
-            txtPower_Gyser.Size = new Size(76, 36);
-            txtPower_Gyser.TabIndex = 20;
-            txtPower_Gyser.Text = "OFF";
-            txtPower_Gyser.TextAlign = ContentAlignment.MiddleCenter;
-            // 
-            // BtnON_Gyser
-            // 
-            BtnON_Gyser.AutoSize = true;
-            BtnON_Gyser.BackColor = Color.FromArgb(0, 192, 0);
-            BtnON_Gyser.FlatAppearance.BorderColor = Color.Black;
-            BtnON_Gyser.FlatAppearance.BorderSize = 5;
-            BtnON_Gyser.Font = new Font("Segoe UI", 12F, FontStyle.Bold);
-            BtnON_Gyser.ForeColor = SystemColors.ActiveCaptionText;
-            BtnON_Gyser.Location = new Point(27, 80);
-            BtnON_Gyser.Margin = new Padding(3, 2, 3, 2);
-            BtnON_Gyser.Name = "BtnON_Gyser";
-            BtnON_Gyser.Size = new Size(84, 49);
-            BtnON_Gyser.TabIndex = 19;
-            BtnON_Gyser.Text = "ON";
-            BtnON_Gyser.UseVisualStyleBackColor = false;
-            BtnON_Gyser.Click += BtnON_Gyser_Click;
-            // 
-            // BtnOFF_Gyser
-            // 
-            BtnOFF_Gyser.AutoSize = true;
-            BtnOFF_Gyser.BackColor = Color.Crimson;
-            BtnOFF_Gyser.FlatAppearance.BorderColor = Color.Black;
-            BtnOFF_Gyser.FlatAppearance.BorderSize = 5;
-            BtnOFF_Gyser.Font = new Font("Segoe UI", 12F, FontStyle.Bold);
-            BtnOFF_Gyser.ForeColor = SystemColors.ActiveCaptionText;
-            BtnOFF_Gyser.Location = new Point(147, 80);
-            BtnOFF_Gyser.Margin = new Padding(3, 2, 3, 2);
-            BtnOFF_Gyser.Name = "BtnOFF_Gyser";
-            BtnOFF_Gyser.Size = new Size(84, 49);
-            BtnOFF_Gyser.TabIndex = 20;
-            BtnOFF_Gyser.Text = "OFF";
-            BtnOFF_Gyser.UseVisualStyleBackColor = false;
-            BtnOFF_Gyser.Click += BtnOFF_Gyser_Click;
             // 
             // panel9
             // 
             panel9.BackColor = SystemColors.ActiveCaptionText;
-            panel9.Controls.Add(txtBoxEGyser);
             panel9.Controls.Add(label34);
+            panel9.Controls.Add(txtBoxEGyser);
+            panel9.Controls.Add(label43);
+            panel9.Controls.Add(label39);
+            panel9.Controls.Add(txtPower_EGyser);
+            panel9.Controls.Add(label42);
+            panel9.Controls.Add(BtnSetOnTime_EGyser);
+            panel9.Controls.Add(OnTimeMin_EGyser);
+            panel9.Controls.Add(OnTimeHour_EGyser);
             panel9.Controls.Add(label26);
             panel9.Controls.Add(label27);
-            panel9.Controls.Add(BtnSetTimer_EGyser);
+            panel9.Controls.Add(BtnSetOffTime_EGyser);
+            panel9.Controls.Add(OffTimeMin_EGyser);
+            panel9.Controls.Add(OffTimeHour_EGyser);
             panel9.Controls.Add(label28);
-            panel9.Controls.Add(timerMin_EGyser);
-            panel9.Controls.Add(txtTimer_EGyser);
-            panel9.Controls.Add(timerHour_EGyser);
+            panel9.Controls.Add(txtOffTime_EGyser);
+            panel9.Controls.Add(label24);
+            panel9.Controls.Add(txtOnTime_EGyser);
             panel9.Controls.Add(label30);
-            panel9.Controls.Add(label31);
             panel9.Controls.Add(txtUptime_EGyser);
-            panel9.Controls.Add(txtPower_EGyser);
             panel9.Controls.Add(BtnON_EGyser);
             panel9.Controls.Add(BtnOFF_EGyser);
-            panel9.Location = new Point(260, 88);
+            panel9.Location = new Point(281, 112);
             panel9.Name = "panel9";
-            panel9.Size = new Size(246, 450);
+            panel9.Size = new Size(246, 537);
             panel9.TabIndex = 26;
             // 
-            // txtBoxEGyser
+            // label43
             // 
-            txtBoxEGyser.BackColor = Color.Red;
-            txtBoxEGyser.Location = new Point(7, 10);
-            txtBoxEGyser.Name = "txtBoxEGyser";
-            txtBoxEGyser.ReadOnly = true;
-            txtBoxEGyser.Size = new Size(26, 23);
-            txtBoxEGyser.TabIndex = 24;
+            label43.AutoSize = true;
+            label43.BackColor = SystemColors.ActiveCaptionText;
+            label43.Font = new Font("Microsoft Sans Serif", 12F);
+            label43.ForeColor = SystemColors.ButtonHighlight;
+            label43.Location = new Point(26, 137);
+            label43.Name = "label43";
+            label43.Size = new Size(57, 20);
+            label43.TabIndex = 24;
+            label43.Text = "Power:";
             // 
-            // label34
+            // label39
             // 
-            label34.AutoSize = true;
-            label34.Font = new Font("Segoe UI", 18F, FontStyle.Bold);
-            label34.ForeColor = SystemColors.ControlLightLight;
-            label34.Location = new Point(48, 5);
-            label34.Name = "label34";
-            label34.Size = new Size(168, 32);
-            label34.TabIndex = 24;
-            label34.Text = "Electric Gyser";
-            // 
-            // label26
-            // 
-            label26.AutoSize = true;
-            label26.ForeColor = SystemColors.ControlLightLight;
-            label26.Location = new Point(149, 342);
-            label26.Name = "label26";
-            label26.Size = new Size(18, 15);
-            label26.TabIndex = 24;
-            label26.Text = "m";
-            // 
-            // label27
-            // 
-            label27.AutoSize = true;
-            label27.ForeColor = SystemColors.ControlLightLight;
-            label27.Location = new Point(60, 342);
-            label27.Name = "label27";
-            label27.Size = new Size(14, 15);
-            label27.TabIndex = 23;
-            label27.Text = "h";
-            // 
-            // BtnSetTimer_EGyser
-            // 
-            BtnSetTimer_EGyser.BackColor = SystemColors.ButtonFace;
-            BtnSetTimer_EGyser.Font = new Font("Segoe UI", 14F);
-            BtnSetTimer_EGyser.Location = new Point(46, 398);
-            BtnSetTimer_EGyser.Name = "BtnSetTimer_EGyser";
-            BtnSetTimer_EGyser.Size = new Size(146, 32);
-            BtnSetTimer_EGyser.TabIndex = 20;
-            BtnSetTimer_EGyser.Text = "Set Timer";
-            BtnSetTimer_EGyser.UseVisualStyleBackColor = false;
-            BtnSetTimer_EGyser.Click += BtnSetTimer_EGyser_Click;
-            // 
-            // label28
-            // 
-            label28.AutoSize = true;
-            label28.BackColor = SystemColors.ActiveCaptionText;
-            label28.Font = new Font("Microsoft Sans Serif", 12F);
-            label28.ForeColor = SystemColors.ButtonHighlight;
-            label28.Location = new Point(12, 155);
-            label28.Name = "label28";
-            label28.Size = new Size(57, 20);
-            label28.TabIndex = 17;
-            label28.Text = "Power:";
-            // 
-            // timerMin_EGyser
-            // 
-            timerMin_EGyser.AutoSize = true;
-            timerMin_EGyser.BackColor = SystemColors.ButtonFace;
-            timerMin_EGyser.Location = new Point(134, 362);
-            timerMin_EGyser.Name = "timerMin_EGyser";
-            timerMin_EGyser.Size = new Size(54, 23);
-            timerMin_EGyser.TabIndex = 18;
-            // 
-            // txtTimer_EGyser
-            // 
-            txtTimer_EGyser.AutoSize = true;
-            txtTimer_EGyser.BackColor = SystemColors.ActiveCaptionText;
-            txtTimer_EGyser.Font = new Font("Courier New", 26F, FontStyle.Bold);
-            txtTimer_EGyser.ForeColor = Color.DeepSkyBlue;
-            txtTimer_EGyser.Location = new Point(95, 262);
-            txtTimer_EGyser.Name = "txtTimer_EGyser";
-            txtTimer_EGyser.Size = new Size(122, 40);
-            txtTimer_EGyser.TabIndex = 18;
-            txtTimer_EGyser.Text = "0:0:0";
-            txtTimer_EGyser.TextAlign = ContentAlignment.MiddleCenter;
-            // 
-            // timerHour_EGyser
-            // 
-            timerHour_EGyser.AutoSize = true;
-            timerHour_EGyser.BackColor = SystemColors.ButtonFace;
-            timerHour_EGyser.InterceptArrowKeys = false;
-            timerHour_EGyser.Location = new Point(46, 362);
-            timerHour_EGyser.Name = "timerHour_EGyser";
-            timerHour_EGyser.Size = new Size(54, 23);
-            timerHour_EGyser.TabIndex = 19;
-            // 
-            // label30
-            // 
-            label30.AutoSize = true;
-            label30.BackColor = SystemColors.ActiveCaptionText;
-            label30.Font = new Font("Microsoft Sans Serif", 12F);
-            label30.ForeColor = SystemColors.ButtonHighlight;
-            label30.Location = new Point(7, 206);
-            label30.Name = "label30";
-            label30.Size = new Size(64, 20);
-            label30.TabIndex = 18;
-            label30.Text = "Uptime:";
-            // 
-            // label31
-            // 
-            label31.AutoSize = true;
-            label31.BackColor = SystemColors.ActiveCaptionText;
-            label31.Font = new Font("Microsoft Sans Serif", 12F);
-            label31.ForeColor = SystemColors.ButtonHighlight;
-            label31.Location = new Point(12, 262);
-            label31.Name = "label31";
-            label31.Size = new Size(52, 20);
-            label31.TabIndex = 17;
-            label31.Text = "Timer:";
-            // 
-            // txtUptime_EGyser
-            // 
-            txtUptime_EGyser.AutoSize = true;
-            txtUptime_EGyser.BackColor = SystemColors.ActiveCaptionText;
-            txtUptime_EGyser.Font = new Font("Courier New", 29F, FontStyle.Bold);
-            txtUptime_EGyser.ForeColor = Color.SpringGreen;
-            txtUptime_EGyser.Location = new Point(95, 206);
-            txtUptime_EGyser.Name = "txtUptime_EGyser";
-            txtUptime_EGyser.Size = new Size(135, 46);
-            txtUptime_EGyser.TabIndex = 19;
-            txtUptime_EGyser.Text = "0:0:0";
-            txtUptime_EGyser.TextAlign = ContentAlignment.MiddleCenter;
+            label39.AutoSize = true;
+            label39.ForeColor = SystemColors.ControlLightLight;
+            label39.Location = new Point(148, 335);
+            label39.Name = "label39";
+            label39.Size = new Size(18, 15);
+            label39.TabIndex = 39;
+            label39.Text = "m";
             // 
             // txtPower_EGyser
             // 
@@ -780,12 +473,179 @@
             txtPower_EGyser.BackColor = SystemColors.ActiveCaptionText;
             txtPower_EGyser.Font = new Font("Microsoft Sans Serif", 22F, FontStyle.Bold);
             txtPower_EGyser.ForeColor = Color.DeepSkyBlue;
-            txtPower_EGyser.Location = new Point(108, 155);
+            txtPower_EGyser.Location = new Point(107, 137);
             txtPower_EGyser.Name = "txtPower_EGyser";
             txtPower_EGyser.Size = new Size(76, 36);
-            txtPower_EGyser.TabIndex = 20;
+            txtPower_EGyser.TabIndex = 25;
             txtPower_EGyser.Text = "OFF";
             txtPower_EGyser.TextAlign = ContentAlignment.MiddleCenter;
+            // 
+            // label42
+            // 
+            label42.AutoSize = true;
+            label42.ForeColor = SystemColors.ControlLightLight;
+            label42.Location = new Point(59, 335);
+            label42.Name = "label42";
+            label42.Size = new Size(14, 15);
+            label42.TabIndex = 38;
+            label42.Text = "h";
+            // 
+            // BtnSetOnTime_EGyser
+            // 
+            BtnSetOnTime_EGyser.BackColor = SystemColors.ButtonFace;
+            BtnSetOnTime_EGyser.Font = new Font("Segoe UI", 14F);
+            BtnSetOnTime_EGyser.Location = new Point(45, 385);
+            BtnSetOnTime_EGyser.Name = "BtnSetOnTime_EGyser";
+            BtnSetOnTime_EGyser.Size = new Size(146, 32);
+            BtnSetOnTime_EGyser.TabIndex = 37;
+            BtnSetOnTime_EGyser.Text = "Set On Time";
+            BtnSetOnTime_EGyser.UseVisualStyleBackColor = false;
+            BtnSetOnTime_EGyser.Click += BtnSetOnTime_EGyser_Click;
+            // 
+            // OnTimeMin_EGyser
+            // 
+            OnTimeMin_EGyser.AutoSize = true;
+            OnTimeMin_EGyser.BackColor = SystemColors.ButtonFace;
+            OnTimeMin_EGyser.Location = new Point(133, 355);
+            OnTimeMin_EGyser.Name = "OnTimeMin_EGyser";
+            OnTimeMin_EGyser.Size = new Size(58, 23);
+            OnTimeMin_EGyser.TabIndex = 35;
+            // 
+            // OnTimeHour_EGyser
+            // 
+            OnTimeHour_EGyser.AutoSize = true;
+            OnTimeHour_EGyser.BackColor = SystemColors.ButtonFace;
+            OnTimeHour_EGyser.InterceptArrowKeys = false;
+            OnTimeHour_EGyser.Location = new Point(47, 355);
+            OnTimeHour_EGyser.Name = "OnTimeHour_EGyser";
+            OnTimeHour_EGyser.Size = new Size(58, 23);
+            OnTimeHour_EGyser.TabIndex = 36;
+            // 
+            // label26
+            // 
+            label26.AutoSize = true;
+            label26.ForeColor = SystemColors.ControlLightLight;
+            label26.Location = new Point(151, 439);
+            label26.Name = "label26";
+            label26.Size = new Size(18, 15);
+            label26.TabIndex = 34;
+            label26.Text = "m";
+            // 
+            // label27
+            // 
+            label27.AutoSize = true;
+            label27.ForeColor = SystemColors.ControlLightLight;
+            label27.Location = new Point(62, 439);
+            label27.Name = "label27";
+            label27.Size = new Size(14, 15);
+            label27.TabIndex = 33;
+            label27.Text = "h";
+            // 
+            // BtnSetOffTime_EGyser
+            // 
+            BtnSetOffTime_EGyser.BackColor = SystemColors.ButtonFace;
+            BtnSetOffTime_EGyser.Font = new Font("Segoe UI", 14F);
+            BtnSetOffTime_EGyser.Location = new Point(48, 488);
+            BtnSetOffTime_EGyser.Name = "BtnSetOffTime_EGyser";
+            BtnSetOffTime_EGyser.Size = new Size(146, 32);
+            BtnSetOffTime_EGyser.TabIndex = 32;
+            BtnSetOffTime_EGyser.Text = "Set Off Time";
+            BtnSetOffTime_EGyser.UseVisualStyleBackColor = false;
+            BtnSetOffTime_EGyser.Click += BtnSetOffTime_EGyser_Click;
+            // 
+            // OffTimeMin_EGyser
+            // 
+            OffTimeMin_EGyser.AutoSize = true;
+            OffTimeMin_EGyser.BackColor = SystemColors.ButtonFace;
+            OffTimeMin_EGyser.Location = new Point(136, 459);
+            OffTimeMin_EGyser.Name = "OffTimeMin_EGyser";
+            OffTimeMin_EGyser.Size = new Size(58, 23);
+            OffTimeMin_EGyser.TabIndex = 30;
+            // 
+            // OffTimeHour_EGyser
+            // 
+            OffTimeHour_EGyser.AutoSize = true;
+            OffTimeHour_EGyser.BackColor = SystemColors.ButtonFace;
+            OffTimeHour_EGyser.InterceptArrowKeys = false;
+            OffTimeHour_EGyser.Location = new Point(50, 459);
+            OffTimeHour_EGyser.Name = "OffTimeHour_EGyser";
+            OffTimeHour_EGyser.Size = new Size(58, 23);
+            OffTimeHour_EGyser.TabIndex = 31;
+            // 
+            // label28
+            // 
+            label28.AutoSize = true;
+            label28.BackColor = SystemColors.ActiveCaptionText;
+            label28.Font = new Font("Microsoft Sans Serif", 12F);
+            label28.ForeColor = SystemColors.ButtonHighlight;
+            label28.Location = new Point(20, 289);
+            label28.Name = "label28";
+            label28.Size = new Size(73, 20);
+            label28.TabIndex = 28;
+            label28.Text = "Off Time:";
+            // 
+            // txtOffTime_EGyser
+            // 
+            txtOffTime_EGyser.AutoSize = true;
+            txtOffTime_EGyser.BackColor = SystemColors.ActiveCaptionText;
+            txtOffTime_EGyser.Font = new Font("Courier New", 26F, FontStyle.Bold);
+            txtOffTime_EGyser.ForeColor = Color.DeepSkyBlue;
+            txtOffTime_EGyser.Location = new Point(92, 280);
+            txtOffTime_EGyser.Name = "txtOffTime_EGyser";
+            txtOffTime_EGyser.Size = new Size(122, 40);
+            txtOffTime_EGyser.TabIndex = 29;
+            txtOffTime_EGyser.Text = "0:0:0";
+            txtOffTime_EGyser.TextAlign = ContentAlignment.MiddleCenter;
+            // 
+            // label24
+            // 
+            label24.AutoSize = true;
+            label24.BackColor = SystemColors.ActiveCaptionText;
+            label24.Font = new Font("Microsoft Sans Serif", 12F);
+            label24.ForeColor = SystemColors.ButtonHighlight;
+            label24.Location = new Point(20, 238);
+            label24.Name = "label24";
+            label24.Size = new Size(72, 20);
+            label24.TabIndex = 26;
+            label24.Text = "On Time:";
+            // 
+            // txtOnTime_EGyser
+            // 
+            txtOnTime_EGyser.AutoSize = true;
+            txtOnTime_EGyser.BackColor = SystemColors.ActiveCaptionText;
+            txtOnTime_EGyser.Font = new Font("Courier New", 26F, FontStyle.Bold);
+            txtOnTime_EGyser.ForeColor = Color.DeepSkyBlue;
+            txtOnTime_EGyser.Location = new Point(92, 229);
+            txtOnTime_EGyser.Name = "txtOnTime_EGyser";
+            txtOnTime_EGyser.Size = new Size(122, 40);
+            txtOnTime_EGyser.TabIndex = 27;
+            txtOnTime_EGyser.Text = "0:0:0";
+            txtOnTime_EGyser.TextAlign = ContentAlignment.MiddleCenter;
+            // 
+            // label30
+            // 
+            label30.AutoSize = true;
+            label30.BackColor = SystemColors.ActiveCaptionText;
+            label30.Font = new Font("Microsoft Sans Serif", 12F);
+            label30.ForeColor = SystemColors.ButtonHighlight;
+            label30.Location = new Point(20, 183);
+            label30.Name = "label30";
+            label30.Size = new Size(64, 20);
+            label30.TabIndex = 18;
+            label30.Text = "Uptime:";
+            // 
+            // txtUptime_EGyser
+            // 
+            txtUptime_EGyser.AutoSize = true;
+            txtUptime_EGyser.BackColor = SystemColors.ActiveCaptionText;
+            txtUptime_EGyser.Font = new Font("Courier New", 29F, FontStyle.Bold);
+            txtUptime_EGyser.ForeColor = Color.SpringGreen;
+            txtUptime_EGyser.Location = new Point(86, 175);
+            txtUptime_EGyser.Name = "txtUptime_EGyser";
+            txtUptime_EGyser.Size = new Size(135, 46);
+            txtUptime_EGyser.TabIndex = 19;
+            txtUptime_EGyser.Text = "0:0:0";
+            txtUptime_EGyser.TextAlign = ContentAlignment.MiddleCenter;
             // 
             // BtnON_EGyser
             // 
@@ -795,7 +655,7 @@
             BtnON_EGyser.FlatAppearance.BorderSize = 5;
             BtnON_EGyser.Font = new Font("Segoe UI", 12F, FontStyle.Bold);
             BtnON_EGyser.ForeColor = SystemColors.ActiveCaptionText;
-            BtnON_EGyser.Location = new Point(27, 80);
+            BtnON_EGyser.Location = new Point(20, 57);
             BtnON_EGyser.Margin = new Padding(3, 2, 3, 2);
             BtnON_EGyser.Name = "BtnON_EGyser";
             BtnON_EGyser.Size = new Size(84, 49);
@@ -812,7 +672,7 @@
             BtnOFF_EGyser.FlatAppearance.BorderSize = 5;
             BtnOFF_EGyser.Font = new Font("Segoe UI", 12F, FontStyle.Bold);
             BtnOFF_EGyser.ForeColor = SystemColors.ActiveCaptionText;
-            BtnOFF_EGyser.Location = new Point(144, 80);
+            BtnOFF_EGyser.Location = new Point(137, 57);
             BtnOFF_EGyser.Margin = new Padding(3, 2, 3, 2);
             BtnOFF_EGyser.Name = "BtnOFF_EGyser";
             BtnOFF_EGyser.Size = new Size(84, 49);
@@ -820,6 +680,43 @@
             BtnOFF_EGyser.Text = "OFF";
             BtnOFF_EGyser.UseVisualStyleBackColor = false;
             BtnOFF_EGyser.Click += BtnOFF_EGyser_Click;
+            // 
+            // panel11
+            // 
+            panel11.BackColor = Color.Silver;
+            panel11.Location = new Point(277, 74);
+            panel11.Name = "panel11";
+            panel11.Size = new Size(261, 587);
+            panel11.TabIndex = 27;
+            // 
+            // txtBoxEGyser
+            // 
+            txtBoxEGyser.BackColor = Color.Red;
+            txtBoxEGyser.Location = new Point(13, 10);
+            txtBoxEGyser.Name = "txtBoxEGyser";
+            txtBoxEGyser.ReadOnly = true;
+            txtBoxEGyser.Size = new Size(26, 23);
+            txtBoxEGyser.TabIndex = 24;
+            // 
+            // label34
+            // 
+            label34.AutoSize = true;
+            label34.Font = new Font("Segoe UI", 18F, FontStyle.Bold);
+            label34.ForeColor = SystemColors.ControlLightLight;
+            label34.Location = new Point(45, 4);
+            label34.Name = "label34";
+            label34.Size = new Size(168, 32);
+            label34.TabIndex = 24;
+            label34.Text = "Electric Gyser";
+            // 
+            // panel12
+            // 
+            panel12.BackColor = Color.Silver;
+            panel12.Controls.Add(panel8);
+            panel12.Location = new Point(10, 74);
+            panel12.Name = "panel12";
+            panel12.Size = new Size(261, 588);
+            panel12.TabIndex = 28;
             // 
             // panel8
             // 
@@ -839,7 +736,7 @@
             panel8.Controls.Add(txtPower_Pump);
             panel8.Controls.Add(BtnON_Pump);
             panel8.Controls.Add(BtnOFF_Pump);
-            panel8.Location = new Point(9, 88);
+            panel8.Location = new Point(11, 43);
             panel8.Name = "panel8";
             panel8.Size = new Size(246, 450);
             panel8.TabIndex = 25;
@@ -1024,12 +921,223 @@
             BtnOFF_Pump.UseVisualStyleBackColor = false;
             BtnOFF_Pump.Click += BtnOFF_Pump_Click;
             // 
+            // panel13
+            // 
+            panel13.BackColor = Color.Silver;
+            panel13.Controls.Add(panel10);
+            panel13.Location = new Point(544, 73);
+            panel13.Name = "panel13";
+            panel13.Size = new Size(261, 588);
+            panel13.TabIndex = 29;
+            // 
+            // panel10
+            // 
+            panel10.BackColor = SystemColors.ActiveCaptionText;
+            panel10.Controls.Add(txtBoxGyser);
+            panel10.Controls.Add(label36);
+            panel10.Controls.Add(label29);
+            panel10.Controls.Add(label32);
+            panel10.Controls.Add(BtnSetTimer_Gyser);
+            panel10.Controls.Add(label35);
+            panel10.Controls.Add(timerMin_Gyser);
+            panel10.Controls.Add(txtTimer_Gyser);
+            panel10.Controls.Add(timerHour_Gyser);
+            panel10.Controls.Add(label37);
+            panel10.Controls.Add(label38);
+            panel10.Controls.Add(txtUptime_Gyser);
+            panel10.Controls.Add(txtPower_Gyser);
+            panel10.Controls.Add(BtnON_Gyser);
+            panel10.Controls.Add(BtnOFF_Gyser);
+            panel10.Location = new Point(11, 38);
+            panel10.Name = "panel10";
+            panel10.Size = new Size(246, 450);
+            panel10.TabIndex = 26;
+            // 
+            // txtBoxGyser
+            // 
+            txtBoxGyser.BackColor = Color.Red;
+            txtBoxGyser.Location = new Point(11, 9);
+            txtBoxGyser.Name = "txtBoxGyser";
+            txtBoxGyser.ReadOnly = true;
+            txtBoxGyser.Size = new Size(26, 23);
+            txtBoxGyser.TabIndex = 25;
+            // 
+            // label36
+            // 
+            label36.AutoSize = true;
+            label36.Font = new Font("Segoe UI", 20F, FontStyle.Bold);
+            label36.ForeColor = SystemColors.ControlLightLight;
+            label36.Location = new Point(81, 3);
+            label36.Name = "label36";
+            label36.Size = new Size(89, 37);
+            label36.TabIndex = 24;
+            label36.Text = "Gyser";
+            // 
+            // label29
+            // 
+            label29.AutoSize = true;
+            label29.ForeColor = SystemColors.ControlLightLight;
+            label29.Location = new Point(149, 342);
+            label29.Name = "label29";
+            label29.Size = new Size(18, 15);
+            label29.TabIndex = 26;
+            label29.Text = "m";
+            // 
+            // label32
+            // 
+            label32.AutoSize = true;
+            label32.ForeColor = SystemColors.ControlLightLight;
+            label32.Location = new Point(60, 342);
+            label32.Name = "label32";
+            label32.Size = new Size(14, 15);
+            label32.TabIndex = 25;
+            label32.Text = "h";
+            // 
+            // BtnSetTimer_Gyser
+            // 
+            BtnSetTimer_Gyser.BackColor = SystemColors.ButtonFace;
+            BtnSetTimer_Gyser.Font = new Font("Segoe UI", 14F);
+            BtnSetTimer_Gyser.Location = new Point(43, 398);
+            BtnSetTimer_Gyser.Name = "BtnSetTimer_Gyser";
+            BtnSetTimer_Gyser.Size = new Size(146, 34);
+            BtnSetTimer_Gyser.TabIndex = 20;
+            BtnSetTimer_Gyser.Text = "Set Timer";
+            BtnSetTimer_Gyser.UseVisualStyleBackColor = false;
+            BtnSetTimer_Gyser.Click += BtnSetTimer_Gyser_Click;
+            // 
+            // label35
+            // 
+            label35.AutoSize = true;
+            label35.BackColor = SystemColors.ActiveCaptionText;
+            label35.Font = new Font("Microsoft Sans Serif", 12F);
+            label35.ForeColor = SystemColors.ButtonHighlight;
+            label35.Location = new Point(11, 155);
+            label35.Name = "label35";
+            label35.Size = new Size(57, 20);
+            label35.TabIndex = 17;
+            label35.Text = "Power:";
+            // 
+            // timerMin_Gyser
+            // 
+            timerMin_Gyser.AutoSize = true;
+            timerMin_Gyser.BackColor = SystemColors.ButtonFace;
+            timerMin_Gyser.Location = new Point(134, 362);
+            timerMin_Gyser.Name = "timerMin_Gyser";
+            timerMin_Gyser.Size = new Size(54, 23);
+            timerMin_Gyser.TabIndex = 18;
+            // 
+            // txtTimer_Gyser
+            // 
+            txtTimer_Gyser.AutoSize = true;
+            txtTimer_Gyser.BackColor = SystemColors.ActiveCaptionText;
+            txtTimer_Gyser.Font = new Font("Courier New", 26F, FontStyle.Bold);
+            txtTimer_Gyser.ForeColor = Color.DeepSkyBlue;
+            txtTimer_Gyser.Location = new Point(98, 262);
+            txtTimer_Gyser.Name = "txtTimer_Gyser";
+            txtTimer_Gyser.Size = new Size(122, 40);
+            txtTimer_Gyser.TabIndex = 18;
+            txtTimer_Gyser.Text = "0:0:0";
+            txtTimer_Gyser.TextAlign = ContentAlignment.MiddleCenter;
+            // 
+            // timerHour_Gyser
+            // 
+            timerHour_Gyser.AutoSize = true;
+            timerHour_Gyser.BackColor = SystemColors.ButtonFace;
+            timerHour_Gyser.InterceptArrowKeys = false;
+            timerHour_Gyser.Location = new Point(43, 362);
+            timerHour_Gyser.Name = "timerHour_Gyser";
+            timerHour_Gyser.Size = new Size(54, 23);
+            timerHour_Gyser.TabIndex = 19;
+            // 
+            // label37
+            // 
+            label37.AutoSize = true;
+            label37.BackColor = SystemColors.ActiveCaptionText;
+            label37.Font = new Font("Microsoft Sans Serif", 12F);
+            label37.ForeColor = SystemColors.ButtonHighlight;
+            label37.Location = new Point(11, 206);
+            label37.Name = "label37";
+            label37.Size = new Size(64, 20);
+            label37.TabIndex = 18;
+            label37.Text = "Uptime:";
+            // 
+            // label38
+            // 
+            label38.AutoSize = true;
+            label38.BackColor = SystemColors.ActiveCaptionText;
+            label38.Font = new Font("Microsoft Sans Serif", 12F);
+            label38.ForeColor = SystemColors.ButtonHighlight;
+            label38.Location = new Point(16, 262);
+            label38.Name = "label38";
+            label38.Size = new Size(52, 20);
+            label38.TabIndex = 17;
+            label38.Text = "Timer:";
+            // 
+            // txtUptime_Gyser
+            // 
+            txtUptime_Gyser.AutoSize = true;
+            txtUptime_Gyser.BackColor = SystemColors.ActiveCaptionText;
+            txtUptime_Gyser.Font = new Font("Courier New", 29F, FontStyle.Bold);
+            txtUptime_Gyser.ForeColor = Color.SpringGreen;
+            txtUptime_Gyser.Location = new Point(95, 206);
+            txtUptime_Gyser.Name = "txtUptime_Gyser";
+            txtUptime_Gyser.Size = new Size(135, 46);
+            txtUptime_Gyser.TabIndex = 19;
+            txtUptime_Gyser.Text = "0:0:0";
+            txtUptime_Gyser.TextAlign = ContentAlignment.MiddleCenter;
+            // 
+            // txtPower_Gyser
+            // 
+            txtPower_Gyser.AutoSize = true;
+            txtPower_Gyser.BackColor = SystemColors.ActiveCaptionText;
+            txtPower_Gyser.Font = new Font("Microsoft Sans Serif", 22F, FontStyle.Bold);
+            txtPower_Gyser.ForeColor = Color.DeepSkyBlue;
+            txtPower_Gyser.Location = new Point(104, 155);
+            txtPower_Gyser.Name = "txtPower_Gyser";
+            txtPower_Gyser.Size = new Size(76, 36);
+            txtPower_Gyser.TabIndex = 20;
+            txtPower_Gyser.Text = "OFF";
+            txtPower_Gyser.TextAlign = ContentAlignment.MiddleCenter;
+            // 
+            // BtnON_Gyser
+            // 
+            BtnON_Gyser.AutoSize = true;
+            BtnON_Gyser.BackColor = Color.FromArgb(0, 192, 0);
+            BtnON_Gyser.FlatAppearance.BorderColor = Color.Black;
+            BtnON_Gyser.FlatAppearance.BorderSize = 5;
+            BtnON_Gyser.Font = new Font("Segoe UI", 12F, FontStyle.Bold);
+            BtnON_Gyser.ForeColor = SystemColors.ActiveCaptionText;
+            BtnON_Gyser.Location = new Point(27, 80);
+            BtnON_Gyser.Margin = new Padding(3, 2, 3, 2);
+            BtnON_Gyser.Name = "BtnON_Gyser";
+            BtnON_Gyser.Size = new Size(84, 49);
+            BtnON_Gyser.TabIndex = 19;
+            BtnON_Gyser.Text = "ON";
+            BtnON_Gyser.UseVisualStyleBackColor = false;
+            BtnON_Gyser.Click += BtnON_Gyser_Click;
+            // 
+            // BtnOFF_Gyser
+            // 
+            BtnOFF_Gyser.AutoSize = true;
+            BtnOFF_Gyser.BackColor = Color.Crimson;
+            BtnOFF_Gyser.FlatAppearance.BorderColor = Color.Black;
+            BtnOFF_Gyser.FlatAppearance.BorderSize = 5;
+            BtnOFF_Gyser.Font = new Font("Segoe UI", 12F, FontStyle.Bold);
+            BtnOFF_Gyser.ForeColor = SystemColors.ActiveCaptionText;
+            BtnOFF_Gyser.Location = new Point(147, 80);
+            BtnOFF_Gyser.Margin = new Padding(3, 2, 3, 2);
+            BtnOFF_Gyser.Name = "BtnOFF_Gyser";
+            BtnOFF_Gyser.Size = new Size(84, 49);
+            BtnOFF_Gyser.TabIndex = 20;
+            BtnOFF_Gyser.Text = "OFF";
+            BtnOFF_Gyser.UseVisualStyleBackColor = false;
+            BtnOFF_Gyser.Click += BtnOFF_Gyser_Click;
+            // 
             // panel2
             // 
             panel2.BackColor = Color.FromArgb(64, 64, 64);
             panel2.Controls.Add(panel7);
             panel2.Controls.Add(panel6);
-            panel2.Controls.Add(label24);
             panel2.Controls.Add(txtLogs_AC);
             panel2.Controls.Add(label5);
             panel2.Controls.Add(txtBox_AC);
@@ -1484,18 +1592,6 @@
             txtBoxACA.Size = new Size(26, 26);
             txtBoxACA.TabIndex = 12;
             // 
-            // label24
-            // 
-            label24.AutoSize = true;
-            label24.BackColor = Color.FromArgb(64, 64, 64);
-            label24.Font = new Font("Segoe UI", 12F);
-            label24.ForeColor = SystemColors.ControlLightLight;
-            label24.Location = new Point(174, 547);
-            label24.Name = "label24";
-            label24.Size = new Size(144, 21);
-            label24.TabIndex = 18;
-            label24.Text = "AC Controller Logs:";
-            // 
             // txtLogs_AC
             // 
             txtLogs_AC.BackColor = SystemColors.InactiveCaptionText;
@@ -1503,9 +1599,9 @@
             txtLogs_AC.ForeColor = SystemColors.Info;
             txtLogs_AC.FormattingEnabled = true;
             txtLogs_AC.ItemHeight = 25;
-            txtLogs_AC.Location = new Point(64, 571);
+            txtLogs_AC.Location = new Point(97, 595);
             txtLogs_AC.Name = "txtLogs_AC";
-            txtLogs_AC.Size = new Size(393, 154);
+            txtLogs_AC.Size = new Size(304, 129);
             txtLogs_AC.TabIndex = 17;
             // 
             // label5
@@ -1514,7 +1610,7 @@
             label5.BackColor = Color.FromArgb(64, 64, 64);
             label5.Font = new Font("Segoe UI", 18F, FontStyle.Bold);
             label5.ForeColor = SystemColors.ControlLightLight;
-            label5.Location = new Point(153, 49);
+            label5.Location = new Point(166, 17);
             label5.Name = "label5";
             label5.Size = new Size(169, 32);
             label5.TabIndex = 0;
@@ -1527,7 +1623,7 @@
             txtBox_AC.Location = new Point(32, 23);
             txtBox_AC.Name = "txtBox_AC";
             txtBox_AC.ReadOnly = true;
-            txtBox_AC.Size = new Size(443, 26);
+            txtBox_AC.Size = new Size(26, 26);
             txtBox_AC.TabIndex = 12;
             // 
             // tabPage1
@@ -1540,7 +1636,7 @@
             tabPage1.Location = new Point(4, 24);
             tabPage1.Name = "tabPage1";
             tabPage1.Padding = new Padding(3);
-            tabPage1.Size = new Size(1328, 763);
+            tabPage1.Size = new Size(1365, 763);
             tabPage1.TabIndex = 2;
             tabPage1.Text = "AC Timer";
             // 
@@ -1592,7 +1688,7 @@
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(1682, 791);
+            ClientSize = new Size(1719, 791);
             Controls.Add(panel5);
             Controls.Add(pnlSetting);
             Controls.Add(panel3);
@@ -1610,18 +1706,22 @@
             tabPage2.ResumeLayout(false);
             panel4.ResumeLayout(false);
             panel4.PerformLayout();
-            panel10.ResumeLayout(false);
-            panel10.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)timerMin_Gyser).EndInit();
-            ((System.ComponentModel.ISupportInitialize)timerHour_Gyser).EndInit();
             panel9.ResumeLayout(false);
             panel9.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)timerMin_EGyser).EndInit();
-            ((System.ComponentModel.ISupportInitialize)timerHour_EGyser).EndInit();
+            ((System.ComponentModel.ISupportInitialize)OnTimeMin_EGyser).EndInit();
+            ((System.ComponentModel.ISupportInitialize)OnTimeHour_EGyser).EndInit();
+            ((System.ComponentModel.ISupportInitialize)OffTimeMin_EGyser).EndInit();
+            ((System.ComponentModel.ISupportInitialize)OffTimeHour_EGyser).EndInit();
+            panel12.ResumeLayout(false);
             panel8.ResumeLayout(false);
             panel8.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)timerMin_Pump).EndInit();
             ((System.ComponentModel.ISupportInitialize)timerHour_Pump).EndInit();
+            panel13.ResumeLayout(false);
+            panel10.ResumeLayout(false);
+            panel10.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)timerMin_Gyser).EndInit();
+            ((System.ComponentModel.ISupportInitialize)timerHour_Gyser).EndInit();
             panel2.ResumeLayout(false);
             panel2.PerformLayout();
             panel7.ResumeLayout(false);
@@ -1655,7 +1755,6 @@
         private TabControl tabControl1;
         private TabPage tabPage2;
         private Panel panel2;
-        private Label label24;
         private Label label8;
         private ListBox txtLogs_AC;
         private Label label9;
@@ -1720,15 +1819,8 @@
         private Button BtnON_Gyser;
         private Button BtnOFF_Gyser;
         private Panel panel9;
-        private Button BtnSetTimer_EGyser;
-        private Label label28;
-        private NumericUpDown timerMin_EGyser;
-        private Label txtTimer_EGyser;
-        private NumericUpDown timerHour_EGyser;
         private Label label30;
-        private Label label31;
         private Label txtUptime_EGyser;
-        private Label txtPower_EGyser;
         private Button BtnSetTimer_Pump;
         private NumericUpDown timerMin_Pump;
         private NumericUpDown timerHour_Pump;
@@ -1738,8 +1830,6 @@
         private Label label18;
         private Label label29;
         private Label label32;
-        private Label label26;
-        private Label label27;
         private Label label19;
         private Label label25;
         private Label label36;
@@ -1749,8 +1839,26 @@
         private TextBox txtBoxGyser;
         private TextBox txtBoxEGyser;
         private ListBox txtLogs_Water;
-        private Label label39;
         private Label label40;
         private TextBox txtBox_Water;
+        private Panel panel11;
+        private Panel panel12;
+        private Panel panel13;
+        private Label label24;
+        private Label txtOnTime_EGyser;
+        private Label label28;
+        private Label txtOffTime_EGyser;
+        private Label label39;
+        private Label label42;
+        private Button BtnSetOnTime_EGyser;
+        private NumericUpDown OnTimeMin_EGyser;
+        private NumericUpDown OnTimeHour_EGyser;
+        private Label label26;
+        private Label label27;
+        private Button BtnSetOffTime_EGyser;
+        private NumericUpDown OffTimeMin_EGyser;
+        private NumericUpDown OffTimeHour_EGyser;
+        private Label label43;
+        private Label txtPower_EGyser;
     }
 }

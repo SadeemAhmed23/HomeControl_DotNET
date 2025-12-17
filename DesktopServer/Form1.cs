@@ -57,7 +57,7 @@ namespace DesktopServer
                 string[] lines = File.ReadAllLines(configFilePath);
                 AcControllerIP = lines[0];
                 WaterControllerIP = lines[1];
-               // MessageBox.Show($"{AcControllerIP} and  {WaterControllerIP}");
+                // MessageBox.Show($"{AcControllerIP} and  {WaterControllerIP}");
             }
         }
         private void ClientDisconnected(object? sender, ConnectionEventArgs e)
@@ -372,28 +372,37 @@ namespace DesktopServer
             {
                 if (WaterData_Pump.Length == 3)
                 {
-                    txtPower_Pump.Text  = WaterData_Pump[0];
+                    txtPower_Pump.Text = WaterData_Pump[0];
                     txtUptime_Pump.Text = WaterData_Pump[1];
-                    txtTimer_Pump.Text  = WaterData_Pump[2];
+                    txtTimer_Pump.Text = WaterData_Pump[2];
                 }
+                else
+                    AppendLog_Water($"Invalid Format recv");
+
                 if (WaterData_Gyser.Length == 3)
                 {
-                    txtPower_Gyser.Text  = WaterData_Gyser[0];
+                    txtPower_Gyser.Text = WaterData_Gyser[0];
                     txtUptime_Gyser.Text = WaterData_Gyser[1];
-                    txtTimer_Gyser.Text  = WaterData_Gyser[2];
+                    txtTimer_Gyser.Text = WaterData_Gyser[2];
                 }
-                if (WaterData_EGyser.Length == 3)
-                {
-                    txtPower_EGyser.Text  = WaterData_EGyser[0];
-                    txtUptime_EGyser.Text = WaterData_EGyser[1];
-                    txtTimer_EGyser.Text  = WaterData_EGyser[2];
-                }
+                else
+                    AppendLog_Water($"Invalid Format recv");
 
-                if (WaterData_Pump[0] == "ON") 
-                  txtBoxPump.BackColor = Color.LawnGreen;
-               else
-                  txtBoxPump.BackColor = Color.Red;
-                
+                if (WaterData_EGyser.Length == 4)
+                {
+                    txtPower_EGyser.Text = WaterData_EGyser[0];
+                    txtUptime_EGyser.Text = WaterData_EGyser[1];
+                    txtOnTime_EGyser.Text = WaterData_EGyser[2];
+                    txtOffTime_EGyser.Text = WaterData_EGyser[3];
+                }
+                else
+                    AppendLog_Water($"Invalid Format recv");
+
+                if (WaterData_Pump[0] == "ON")
+                    txtBoxPump.BackColor = Color.LawnGreen;
+                else
+                    txtBoxPump.BackColor = Color.Red;
+
                 if (WaterData_EGyser[0] == "ON")
                     txtBoxEGyser.BackColor = Color.LawnGreen;
                 else
@@ -431,6 +440,14 @@ namespace DesktopServer
         {
             UpdateWaterData("PowerPump_OFF");
         }
+        private void BtnSetTimer_Pump_Click(object sender, EventArgs e)
+        {
+            decimal seconds = (timerHour_Pump.Value * 3600) + (timerMin_Pump.Value * 60);
+            UpdateWaterData($"Pump;{seconds}");
+        }
+
+
+
 
         private void BtnON_EGyser_Click(object sender, EventArgs e)
         {
@@ -442,6 +459,17 @@ namespace DesktopServer
             UpdateWaterData("PowerEGyser_OFF");
         }
 
+        private void BtnSetOnTime_EGyser_Click(object sender, EventArgs e)
+        {
+            decimal seconds = (OnTimeHour_EGyser.Value * 3600) + (OnTimeMin_EGyser.Value * 60);
+            UpdateWaterData($"OnTime_EGyser;{seconds}");
+        }
+        private void BtnSetOffTime_EGyser_Click(object sender, EventArgs e)
+        {
+            decimal seconds = (OffTimeHour_EGyser.Value * 3600) + (OffTimeMin_EGyser.Value * 60);
+            UpdateWaterData($"OffTime_EGyser;{seconds}");
+        }
+
         private void BtnON_Gyser_Click(object sender, EventArgs e)
         {
             UpdateWaterData("PowerGyser_ON");
@@ -451,19 +479,6 @@ namespace DesktopServer
         {
             UpdateWaterData("PowerGyser_OFF");
         }
-
-        private void BtnSetTimer_Pump_Click(object sender, EventArgs e)
-        {
-            decimal seconds = (timerHour_Pump.Value * 3600) + (timerMin_Pump.Value * 60);
-            UpdateWaterData($"Pump;{seconds}");
-        }
-
-        private void BtnSetTimer_EGyser_Click(object sender, EventArgs e)
-        {
-            decimal seconds = (timerHour_EGyser.Value * 3600) + (timerMin_EGyser.Value * 60);
-            UpdateWaterData($"EGyser;{seconds}");
-        }
-
         private void BtnSetTimer_Gyser_Click(object sender, EventArgs e)
         {
             decimal seconds = (timerHour_Gyser.Value * 3600) + (timerMin_Gyser.Value * 60);
